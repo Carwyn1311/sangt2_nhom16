@@ -38,11 +38,11 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(92, 120);
+            label1.Location = new Point(77, 120);
             label1.Name = "label1";
-            label1.Size = new Size(81, 20);
+            label1.Size = new Size(110, 20);
             label1.TabIndex = 0;
-            label1.Text = "UserName:";
+            label1.Text = "Tên đăng nhập:";
             label1.Click += label1_Click;
             // 
             // txtUserName
@@ -59,7 +59,7 @@
             label2.Name = "label2";
             label2.Size = new Size(70, 20);
             label2.TabIndex = 2;
-            label2.Text = "Password";
+            label2.Text = "mật khẩu";
             label2.Click += label2_Click;
             // 
             // txtpassword
