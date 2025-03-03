@@ -33,6 +33,8 @@
             label2 = new Label();
             textboxmatkhau = new TextBox();
             btnlogin = new Button();
+            fileSystemWatcher1 = new FileSystemWatcher();
+            ((System.ComponentModel.ISupportInitialize)fileSystemWatcher1).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -51,6 +53,7 @@
             textboxusername.Name = "textboxusername";
             textboxusername.Size = new Size(125, 27);
             textboxusername.TabIndex = 1;
+            textboxusername.TextChanged += textboxusername_TextChanged;
             // 
             // label2
             // 
@@ -68,6 +71,7 @@
             textboxmatkhau.Name = "textboxmatkhau";
             textboxmatkhau.Size = new Size(125, 27);
             textboxmatkhau.TabIndex = 3;
+            textboxmatkhau.TextChanged += textboxmatkhau_TextChanged;
             // 
             // btnlogin
             // 
@@ -77,6 +81,12 @@
             btnlogin.TabIndex = 4;
             btnlogin.Text = "đăng nhập";
             btnlogin.UseVisualStyleBackColor = true;
+            btnlogin.Click += btnlogin_Click;
+            // 
+            // fileSystemWatcher1
+            // 
+            fileSystemWatcher1.EnableRaisingEvents = true;
+            fileSystemWatcher1.SynchronizingObject = this;
             // 
             // Form1
             // 
@@ -91,6 +101,7 @@
             Name = "Form1";
             Text = "Form1";
             Load += Form1_Load;
+            ((System.ComponentModel.ISupportInitialize)fileSystemWatcher1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -102,5 +113,6 @@
         private Label label2;
         private TextBox textboxmatkhau;
         private Button btnlogin;
+        private FileSystemWatcher fileSystemWatcher1;
     }
 }
