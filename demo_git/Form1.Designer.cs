@@ -30,6 +30,8 @@
         {
             label1 = new Label();
             txtUserName = new TextBox();
+            label2 = new Label();
+            txtmatkhau = new TextBox();
             SuspendLayout();
             // 
             // label1
@@ -49,11 +51,30 @@
             txtUserName.Size = new Size(125, 27);
             txtUserName.TabIndex = 1;
             // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(92, 170);
+            label2.Name = "label2";
+            label2.Size = new Size(70, 20);
+            label2.TabIndex = 2;
+            label2.Text = "Mật khẩu";
+            label2.Click += label2_Click;
+            // 
+            // txtmatkhau
+            // 
+            txtmatkhau.Location = new Point(193, 167);
+            txtmatkhau.Name = "txtmatkhau";
+            txtmatkhau.Size = new Size(125, 27);
+            txtmatkhau.TabIndex = 3;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(975, 450);
+            Controls.Add(txtmatkhau);
+            Controls.Add(label2);
             Controls.Add(txtUserName);
             Controls.Add(label1);
             Name = "Form1";
@@ -67,5 +88,7 @@
 
         private Label label1;
         private TextBox txtUserName;
+        private Label label2;
+        private TextBox txtmatkhau;
     }
 }
